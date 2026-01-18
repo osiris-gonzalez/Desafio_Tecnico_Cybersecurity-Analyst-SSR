@@ -45,7 +45,7 @@ def ejecutar_alta():
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
     
     # lee archivo csv
-    df = pd.read_csv("data/empleados.csv")
+    df = pd.read_csv("data/empleados_parte1.csv")
 
     for index, fila in df.iterrows():
         nombre = fila['Nombre']
